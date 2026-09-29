@@ -2,155 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — MemeTrader Paper Trading</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MemeTrader: Meme Coin Paper Trading</title>
 <style>
-  :root{color-scheme:light dark}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       max-width:720px;margin:0 auto;padding:32px 20px 80px;line-height:1.6;color:#222;background:#fff}
-  h1{font-size:1.6em;margin-bottom:4px}
-  .updated{color:#666;font-size:0.9em;margin-bottom:32px}
-  h2{font-size:1.15em;margin-top:2em;border-top:1px solid #e2e2e2;padding-top:1.2em}
-  ul{padding-left:1.3em}
-  li{margin:6px 0}
-  code{background:#f2f2f2;padding:1px 6px;border-radius:4px;font-size:0.92em}
-  .note{background:#f7f5ff;border:1px solid #e3ddf7;border-radius:8px;padding:12px 16px;margin:16px 0;font-size:0.95em}
-  a{color:#6b4fbb}
-  @media (prefers-color-scheme: dark){
-    body{background:#141417;color:#e5e0ec}
-    .updated{color:#a09aad}
-    h2{border-top-color:#33303b}
-    code{background:#232229;color:#e5e0ec}
-    .note{background:#201c2e;border-color:#3a3450}
-    a{color:#b698f0}
-  }
+:root{color-scheme:light dark}body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:780px;margin:auto;padding:32px 20px 72px;line-height:1.65;background:#fff;color:#24212a}h1{font-size:1.8rem;line-height:1.25}h2{font-size:1.2rem;margin-top:2rem;border-top:1px solid #ddd;padding-top:1rem}li{margin:.5rem 0}a{color:#6642a6}code{overflow-wrap:anywhere}.updated{color:#666}.note{padding:16px;background:#f4f0fa;border-radius:8px}@media(prefers-color-scheme:dark){body{background:#151318;color:#e9e4ef}.updated{color:#b8afc3}h2{border-color:#403747}a{color:#c9aaff}.note{background:#292133}}
 </style>
 </head>
 <body>
+<main>
+<h1>Privacy Policy — MemeTrader: Meme Coin Paper Trading</h1>
+<p class="updated">Last updated: September 29, 2026</p>
+<p>This policy describes how MemeTrader: Meme Coin Paper Trading ("MemeTrader," "the extension," "we," or "our") collects, accesses, uses, stores, and shares information. It covers the local paper-trading extension, including its simulated trading, chart markers, practice progress, badges, and cosmetic features.</p>
+<p class="note">MemeTrader simulates trades using fictional balances. It does not execute real trades, connect a real wallet, or move funds. Trading records and preferences are saved in your browser. Market-data providers receive network requests, and supported websites' chart code receives the simulated trade information needed to display chart markers, as explained below.</p>
 
-<h1>Privacy Policy — MemeTrader Paper Trading</h1>
-<p class="updated">Last updated: September 18, 2026</p>
-
-<p>MemeTrader Paper Trading ("the extension," "we," "our") is a browser extension for
-simulated, "paper" trading of meme coins while browsing GMGN, DEX Screener, Axiom, FOMO, and TERMINAL.
-This policy explains what data the extension handles and — just as importantly — what
-it does not do.</p>
-
-<div class="note">
-<strong>In short:</strong> the extension never handles real money, never connects to a
-wallet, and never places a real trade. All of your paper-trading data stays on your own
-device. We do not operate a server, and we do not collect, see, or receive any of your
-personal information.
-</div>
-
-<h2>What data is stored, and where</h2>
-<p>The extension stores the following using Chrome's built-in local storage
-(<code>chrome.storage.local</code>), entirely on your own device:</p>
+<h2>1. Information we collect or access</h2>
 <ul>
-  <li>Your simulated paper-trading balances, positions, and trade history</li>
-  <li>Your simulated trading settings (fee, slippage, and gas assumptions; buy/sell
-      presets; starting balance)</li>
-  <li>Pending simulated limit / take-profit / stop-loss orders</li>
-  <li>Panel layout preferences (position, size, collapsed/expanded state)</li>
-  <li>Cached price data, used briefly to reduce repeat lookups</li>
+<li><strong>Supported-page information:</strong> the current page URL, platform, blockchain network, token or pair identifiers, token symbols, and relevant publicly displayed market information, such as prices and market capitalization. The extension uses this information to identify the token you are viewing and provide its trading panel and chart features. It can read displayed market information on GMGN and FOMO and interact with supported chart components. It does not use Chrome's browsing-history API or collect a general history of unrelated websites.</li>
+<li><strong>Information you enter and simulated trading activity:</strong> manual token searches, simulated balances and funding entries, positions, buy and sell amounts, fill prices, timestamps, trade history, profit/loss calculations, and pending or completed simulated orders.</li>
+<li><strong>Settings and preferences:</strong> simulated fees and slippage, starting balances, trading and order presets, panel layout, interface mode, selected progress tab, and sound preferences.</li>
+<li><strong>Practice progress:</strong> practice dates, milestones, earned badges and their timestamps, unlocked cosmetics, and the selected cosmetic appearance.</li>
+<li><strong>Market caches and backup information:</strong> cached market responses, exchange rates, request timing and retry information, imported backup contents, restore-preview data, and a recovery copy of trading data saved before a restore.</li>
+<li><strong>Support correspondence:</strong> if you email us, we receive your email address, message, and any attachments or other information you choose to send.</li>
 </ul>
-<p>None of this data is transmitted to us. We do not run a server, we do not have a
-database, and we have no way to see what you store — it lives only in your own
-browser's local storage, the same way a website's local settings would.</p>
+<p>This version does not require an account and has no Google sign-in or cloud synchronization. The extension does not request your name or email address to use its features. It does not collect real-wallet private keys, seed phrases, login credentials, payment-card information, or real-wallet balances. Public token contract addresses used for price lookups are distinct from your personal wallet address.</p>
 
-<h2>Backups</h2>
-<p>The extension lets you export your paper-trading data to a JSON file that is saved
-directly to your own computer, and later restore from a file you select yourself. This
-export/import happens entirely on your device; the file never passes through us or any
-third-party server.</p>
+<h2>2. How information is used and handled</h2>
+<p>MemeTrader uses the information above to identify the current market, obtain prices, calculate simulated trades and performance, check simulated orders, display chart markers, save preferences, award local practice rewards, and import or export backups. Pending simulated orders may trigger price requests in the background while Chrome and the extension are running, even when the relevant token page is not open.</p>
+<p>Trading calculations and progress tracking run in the browser. The extension does not upload your trading database or progress to a developer-operated server. Support correspondence is used to respond to your request and investigate issues you report.</p>
 
-<h2>Network requests we make</h2>
-<p>To display live token prices for your paper trades, the extension makes requests to
-two public, third-party price APIs:</p>
+<h2>3. Storage and security</h2>
+<p>The extension stores its persistent trading records, preferences, progress, caches, and restore information in <code>chrome.storage.local</code> in your Chrome profile. It does not use Chrome's synchronized extension storage to synchronize these records between devices. Some working data is also held temporarily in memory.</p>
+<p>Exported JSON backups are saved to a location on your computer selected or configured through your browser. Imports read a file you select. These operations do not upload the file to us. Wallet backups do not include cosmetic progress. If you save a backup in a folder synchronized by another service, that service handles the file under its own settings and policy.</p>
+<p>External market-data connections use HTTPS or secure WebSockets (WSS). Local records and JSON backups are not separately encrypted by MemeTrader; their protection depends on your browser, operating system, and device access controls. Keep backups in a location appropriate for the information they contain.</p>
+
+<h2>4. Sharing and third-party access</h2>
+<p><strong>Market-data providers.</strong> The extension contacts these services to obtain market information:</p>
 <ul>
-  <li><strong>DexScreener</strong> (<code>api.dexscreener.com</code>) — to look up a
-      token or trading pair's current price, liquidity, and volume, using only the
-      public chain and token/pair identifiers involved. No personal information is
-      included in these requests.</li>
-  <li><strong>CoinGecko</strong> (<code>api.coingecko.com</code>) — to convert a
-      network's native currency (for example SOL or ETH) into its current USD value.
-      No personal information is included in these requests.</li>
+<li><strong>DEX Screener — <code>api.dexscreener.com</code>:</strong> receives token or pair identifiers and, for applicable requests, a blockchain identifier to return prices and market information such as liquidity, volume, and market capitalization.</li>
+<li><strong>CoinGecko — <code>api.coingecko.com</code>:</strong> receives native-currency identifiers and the requested quote currency, USD, to provide conversion rates.</li>
+<li><strong>TERMINAL / Padre — <code>backend.padre.gg</code>:</strong> receives network, token, pair, or market identifiers through HTTPS requests and secure WebSocket connections to supply fallback market snapshots for supported TERMINAL markets.</li>
 </ul>
-<p>These are read-only lookups of public market data. Neither service receives your
-identity, your paper-trading history, or any other data about you — only the token,
-pair, or currency identifier needed to answer the price request.</p>
+<p>These services receive the connection's IP address and standard connection/request metadata, which can include request time, browser-supplied headers, and origin information. Requested identifiers can reveal which market is being looked up. The extension does not include your simulated balances, complete trade history, or progress records in these price requests. Providers may log and retain request information according to their own policies; MemeTrader does not control their logs or retention periods.</p>
+<p><strong>Website and chart integration.</strong> To draw paper-trade markers and pending-order lines, MemeTrader passes information about the current token's simulated trades and orders to code running in the supported webpage and compatible chart frames, including TradingView-based charts. This information can include the page URL, network and token/pair identifiers, symbol, currency and market values, simulated trade IDs, buy/sell direction, times, amounts, fill prices, and pending-order IDs and target values. Scripts running in those page contexts may access the messages and chart objects. This is local browser integration, but it makes that information accessible to the webpage; it is not a guarantee that the website cannot observe it.</p>
+<p><strong>Optional links and referrals.</strong> The extension includes clearly labeled referral links to GMGN, Axiom, FOMO, and TERMINAL using the code <code>mtraderx</code>. When you choose to open a link, the destination receives the referral code, normal connection information, and any information you provide there. The platform may associate the referral with your account and activity under its own terms and privacy policy. We may earn a commission. The extension does not send your paper-trading database as part of the referral link.</p>
+<p><strong>Support email.</strong> If you contact <a href="mailto:thememetraderapp@gmail.com">thememetraderapp@gmail.com</a>, your correspondence is processed by our email provider, Gmail/Google, and by us for support. Do not send private keys, seed phrases, passwords, or other secrets.</p>
+<p>We do not sell extension user data, use it for personalized advertising, or include third-party analytics or advertising trackers in the extension. We do not receive your local trading database automatically. The disclosures above describe the extension's market requests, page integrations, optional links, and voluntary support contact; the supported websites also operate their own services independently of MemeTrader.</p>
 
-<h2>What the extension does on GMGN, DEX Screener, Axiom, FOMO and TERMINAL</h2>
-<p>The extension adds a visual overlay panel to these sites so you can place simulated
-trades while browsing. To do this, it:</p>
+<h2>5. Retention and deletion</h2>
 <ul>
-  <li>Reads the page's URL to detect which token or pair you're viewing</li>
-  <li>On GMGN specifically, reads the publicly displayed USD price text shown on the
-      page (the same number you can already see on screen) so simulated fills can use
-      it when available</li>
-  <li>Draws its own overlay UI and, where supported, adds markers to the page's own
-      price chart showing your simulated buy/sell points</li>
+<li><strong>Local records:</strong> trading records, settings, and progress remain in your Chrome profile until replaced, reset where supported, or removed with the extension's local data. The extension does not apply a general automatic deletion period to all stored records.</li>
+<li><strong>Account reset:</strong> the Reset account control resets the selected network's practice balance, positions, and history, and cancels its pending orders. It does not erase all extension data. Preferences, earned progress, cosmetics, order records, caches, and recovery copies may remain.</li>
+<li><strong>Complete local removal:</strong> remove MemeTrader through Chrome's extension management page to remove its <code>chrome.storage.local</code> data. Disabling the extension does not delete that data. A fresh installation does not restore the deleted records unless you import a backup.</li>
+<li><strong>Caches and restore copies:</strong> cache freshness limits determine when data can be reused, not when every stored copy is deleted. Stored entries may remain until replaced, evicted, or removed with extension data. Restore-preview validity expires after 15 minutes, but expiration alone does not guarantee removal of its stored contents. The pre-restore recovery copy remains until replaced by another restore or removed with extension data.</li>
+<li><strong>Exported files:</strong> uninstalling or resetting does not delete JSON backups you exported, copies you made, or copies held by your device-backup services. Delete these separately if you no longer want them.</li>
+<li><strong>Support and external providers:</strong> support messages remain in our support mailbox unless deleted; contact us to request deletion of correspondence you sent. We cannot delete records held independently by market providers, referral platforms, or your own backup services. Contact those providers about their records and retention practices.</li>
 </ul>
-<p>The extension does not read, access, or transmit your account information, wallet
-address, wallet balance, private keys, login credentials, or any other personal or
-financial data from these sites. It has no ability to place a real trade, connect a
-real wallet, or move real funds — everything the extension does is a local simulation.</p>
+<p>You can review your simulated trading information in the extension and export a wallet backup. You can change preferences in its controls and limit site access or disable the extension in Chrome. Because we do not hold your local extension database, we cannot recover or remotely erase it for you.</p>
 
-<h2>Affiliate / referral links</h2>
-<p>The extension includes optional links to GMGN, Axiom, FOMO, and TERMINAL that use our referral code
-(<code>mtraderx</code>). These links are always clearly labeled, and clicking one is
-entirely your choice — the extension never opens them automatically. If you sign up
-through one of these links:</p>
+<h2>6. Permissions and site access</h2>
 <ul>
-  <li>You may receive a trading fee discount on that platform, as described next to
-      the link at the time</li>
-  <li>We may earn a commission from that platform, at no additional cost to you</li>
-</ul>
-<p>Once you click through, you leave the extension and are subject to that platform's
-own privacy policy and terms — we have no visibility into what happens on their site
-after that point.</p>
-
-<h2>What we don't do</h2>
-<ul>
-  <li>We don't collect your name, email address, or any other personal identifier</li>
-  <li>We don't use analytics, trackers, or advertising services of any kind</li>
-  <li>We don't sell or share data with third parties, because we don't collect any to
-      begin with</li>
-  <li>We don't require an account, sign-in, or wallet connection to use the extension</li>
-  <li>We don't set our own tracking cookies</li>
+<li><strong>Storage:</strong> saves the local data described in this policy.</li>
+<li><strong>Alarms:</strong> schedules background checks for simulated pending orders.</li>
+<li><strong>Supported trading sites:</strong> access on GMGN, DEX Screener, Axiom, FOMO, and TERMINAL (<code>trade.padre.gg</code> and <code>terminal.pump.fun</code>) enables token detection, the trading panel, market information, and chart integration.</li>
+<li><strong>Chart frames:</strong> scripts on matching supported-site and TradingView frames enable compatible chart markers and order lines.</li>
+<li><strong>Market-data hosts:</strong> access to DEX Screener, CoinGecko, and the TERMINAL/Padre backend enables the requests described above. The manifest also declares host access to Axiom for its supported-site integration.</li>
 </ul>
 
-<h2>Permissions this extension requests, and why</h2>
-<ul>
-  <li><strong>storage</strong> — to save your paper-trading data and settings locally,
-      as described above</li>
-  <li><strong>alarms</strong> — to periodically check whether any pending simulated
-      limit/take-profit/stop-loss orders should fill, even when you don't have the
-      relevant tab open</li>
-  <li><strong>Host access to gmgn.ai, dexscreener.com, axiom.trade, fomo.family, and trade.padre.gg</strong> — to
-      display the paper-trading overlay on those sites</li>
-  <li><strong>Host access to api.dexscreener.com and api.coingecko.com</strong> — to
-      fetch the public price data described above</li>
-</ul>
+<h2>7. Limited use of extension data</h2>
+<p>MemeTrader uses data accessed through the extension only to provide its user-facing paper-trading features. Its use and transfer of that data adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy, including the Limited Use requirements</a>. We do not use browsing information for advertising, profiling, sale, or unrelated purposes. We do not receive or review local trading records unless you voluntarily provide them for support.</p>
 
-<h2>Children's privacy</h2>
-<p>This extension is not directed at children and is not intended for use by anyone
-under the age of 13. We do not knowingly collect information from children, and in any
-case, we do not collect personal information from any user.</p>
+<h2>8. Children's privacy</h2>
+<p>MemeTrader is not directed to children under 13. If you believe a child has sent us personal information through support correspondence, contact us to request its deletion.</p>
 
-<h2>Not affiliated with GMGN, DEX Screener, Axiom, FOMO, or TERMINAL.</h2>
-<p>MemeTrader Paper Trading is an independent, unofficial tool. It is not affiliated
-with, endorsed by, or sponsored by GMGN, DEX Screener, Axiom, FOMO, or TERMINAL. All trademarks belong
-to their respective owners.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, we'll update the "Last updated" date at the top of this
-page. Continued use of the extension after a change means you accept the updated
-policy.</p>
-
-<h2>Contact</h2>
-<p>Questions about this policy or how the extension works can be sent to:
-<strong>thememetraderapp@gmail.com</strong></p>
-
+<h2>9. Changes and contact</h2>
+<p>We will update this page and its revision date when the policy changes. Where a change requires additional disclosure or consent, we will provide it as applicable.</p>
+<p>For questions about this policy, data handling, or support correspondence, contact the MemeTrader developer at <a href="mailto:thememetraderapp@gmail.com">thememetraderapp@gmail.com</a>.</p>
+<p>MemeTrader is an independent tool and is not affiliated with or endorsed by GMGN, DEX Screener, Axiom, FOMO, TERMINAL, CoinGecko, or TradingView.</p>
+</main>
 </body>
 </html>
